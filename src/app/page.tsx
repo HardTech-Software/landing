@@ -1,6 +1,7 @@
-import { Button, ServiceCard } from "@/components";
+import { Button, Card, RatingCard, ServiceCard } from "@/components";
 import CardComponent from "@/components/card";
-import RatingCard from "@/components/rating-card";
+import Footer from "@/components/footer";
+
 import { cards } from "@/utils/constants/card";
 import { ratingCard } from "@/utils/constants/rating-card";
 import { cardsOne, cardsTwo } from "@/utils/constants/services-cards";
@@ -55,11 +56,11 @@ export default function Home() {
         }}
       >
         {cards.map((card) => (
-          <CardComponent url={card.url} text={card.text} />
+          <Card url={card.url} text={card.text} />
         ))}
       </Box> */}
 
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           justifyContent: "space-around",
@@ -68,7 +69,9 @@ export default function Home() {
         {ratingCard.map((card) => (
           <RatingCard comment={card.comment} author={card.author} />
         ))}
-      </Box>
+      </Box> */}
+
+      <Footer />
     </main>
   );
 }
