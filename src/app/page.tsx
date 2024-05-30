@@ -1,15 +1,20 @@
-import { Button, Card, RatingCard, ServiceCard } from "@/components";
-import CardComponent from "@/components/card";
-import Footer from "@/components/footer";
+import { Button, Card, Header, RatingCard, ServiceCard } from '@/components';
+import CardComponent from '@/components/card';
+import Footer from '@/components/footer';
 
-import { cards } from "@/utils/constants/card";
-import { ratingCard } from "@/utils/constants/rating-card";
-import { cardsOne, cardsTwo } from "@/utils/constants/services-cards";
-import { Box } from "@mui/material";
+import { cards } from '@/utils/constants/card';
+import { ratingCard } from '@/utils/constants/rating-card';
+import { cardsOne, cardsTwo } from '@/utils/constants/services-cards';
+import { Box } from '@mui/material';
+import { SectionOne, SectionTwo, SectionThree } from '@/components/sections';
 
 export default function Home() {
   return (
     <main>
+      <Header />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
       {/* <h1>Landing</h1>
       <div style={{ padding: "10px", backgroundColor: "black" }}>
         <Button variant="contained">Learn More</Button>
