@@ -34,6 +34,7 @@ const Header = () => {
               '&:hover': {
                 color: 'white',
                 backgroundColor: '#316EC2',
+                border: '2px solid #316EC2',
               },
             }}
           >

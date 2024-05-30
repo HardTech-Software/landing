@@ -6,15 +6,15 @@ import {
   SxProps,
   TextField,
   Typography,
-} from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+} from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import { Facebook, YouTube, LinkedIn, Instagram } from "@mui/icons-material";
-import React from "react";
-import ColumnLinks from "../column-links";
+import { Facebook, YouTube, LinkedIn, Instagram } from '@mui/icons-material';
+import React from 'react';
+import ColumnLinks from '../column-links';
 
-import { styles } from "./styles";
-import { columns } from "@/utils/constants/column-links";
+import { styles } from './styles';
+import { columns } from '@/utils/constants/column-links';
 const Footer = () => {
   return (
     <>
@@ -26,7 +26,7 @@ const Footer = () => {
             into real business solutions for automotive, financial, insuranc.
           </Typography>
 
-          <Box sx={{ display: "flex" }}>
+          <Box sx={{ display: 'flex' }}>
             <TextField
               sx={styles.input}
               id="outlined-basic"
@@ -44,8 +44,8 @@ const Footer = () => {
         </Box>
 
         <Box sx={styles.sectionCenter}>
-          {columns.map((column) => (
-            <ColumnLinks {...column} />
+          {columns.map((column, index) => (
+            <ColumnLinks key={index} {...column} />
           ))}
         </Box>
 
