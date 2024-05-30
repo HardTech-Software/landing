@@ -2,54 +2,25 @@ import { Box, Link, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 
-const ColumnLinks = () => {
+interface ColumnLinksProps {
+  title: string;
+  items: Array<Item>;
+}
+
+interface Item {
+  label: string;
+  url: string;
+}
+
+const ColumnLinks = ({ title, items }: ColumnLinksProps) => {
   return (
-    <Box sx={styles.links}>
-      <Box
-        sx={{
-          minWidth: 200,
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography sx={styles.title}>Quick Links</Typography>
+    <Box>
+      <Box sx={styles.links}>
+        <Typography sx={styles.title}>{title}</Typography>
 
-        <Link sx={styles.item}>My Account</Link>
-        <Link sx={styles.item}>My Account</Link>
-        <Link sx={styles.item}>My Account</Link>
-      </Box>
-
-      <Box
-        sx={{
-          minWidth: 200,
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography sx={styles.title}>Quick Links</Typography>
-
-        <Link sx={styles.item}>My Account</Link>
-        <Link sx={styles.item}>My Account</Link>
-        <Link sx={styles.item}>My Account</Link>
-      </Box>
-
-      <Box
-        sx={{
-          minWidth: 200,
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Typography sx={styles.title}>Quick Links</Typography>
-
-        <Link sx={styles.item}>My Account</Link>
-        <Link sx={styles.item}>My Account</Link>
+        {items.map((item) => (
+          <Link sx={styles.item}>{item.label}</Link>
+        ))}
       </Box>
     </Box>
   );

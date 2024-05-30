@@ -10,18 +10,27 @@ export const styles: StylesProps = {
 
   sectionLeft: {
     maxWidth: { md: 350 },
-    paddingRight: "20px",
-    // backgroundColor: "green",
+    padding: "0 20px 40px 0",
   },
 
   sectionCenter: {
     flex: 1,
-    // backgroundColor: "red",
+    paddingBottom: "40px",
+    display: "flex",
+    typography: "body1",
+    "& > :not(style) ~ :not(style)": {
+      ml: 2,
+    },
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+    "&.MuiBox-root": {
+      margin: 0,
+      minWidth: 200,
+    },
   },
 
   sectionRight: {
-    paddingLeft: "20px",
-    // backgroundColor: "purple",
+    padding: "0 0 40px 20px",
   },
 
   textTop: {
@@ -51,6 +60,7 @@ export const styles: StylesProps = {
   iconButton: {
     height: 40,
     color: "#fff",
+    marginRight: "10px",
   },
 
   iconButtonFacebook: {
@@ -80,6 +90,17 @@ export const styles: StylesProps = {
 
   iconContainer: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "initial",
+  },
+
+  copyContainer: {
+    textAlign: "center",
+    padding: "16px",
+  },
+
+  copy: {
+    color: "#4C526E",
+    fontSize: "14px",
+    lineHeight: 2,
   },
 };

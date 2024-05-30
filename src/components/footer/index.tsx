@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Divider,
   IconButton,
   SxProps,
   TextField,
@@ -11,8 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Facebook, YouTube, LinkedIn, Instagram } from "@mui/icons-material";
 import React from "react";
 import ColumnLinks from "../column-links";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+
 import { styles } from "./styles";
+import { columns } from "@/utils/constants/column-links";
 const Footer = () => {
   return (
     <>
@@ -42,7 +44,9 @@ const Footer = () => {
         </Box>
 
         <Box sx={styles.sectionCenter}>
-          <ColumnLinks />
+          {columns.map((column) => (
+            <ColumnLinks {...column} />
+          ))}
         </Box>
 
         <Box sx={styles.sectionRight}>
@@ -91,8 +95,12 @@ const Footer = () => {
         </Box>
       </Box>
 
-      <Box>
-        <h1>copy</h1>
+      <Divider variant="middle" />
+
+      <Box sx={styles.copyContainer}>
+        <Typography sx={styles.copy}>
+          Copyright ©2024 All rights reserved | HardTech
+        </Typography>
       </Box>
     </>
   );

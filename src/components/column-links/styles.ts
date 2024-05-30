@@ -2,12 +2,10 @@ import { StylesProps } from "@/models/styles-props.interface";
 
 export const styles: StylesProps = {
   links: {
+    flex: 1,
     display: "flex",
-    typography: "body1",
-    "& > :not(style) ~ :not(style)": {
-      ml: 2,
-    },
-    flexWrap: "wrap",
+    flexDirection: "column",
+    alignItems: "center",
   },
   title: {
     color: "#003072",
