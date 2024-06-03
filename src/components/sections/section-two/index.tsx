@@ -1,17 +1,17 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import { styles } from "./styles";
-import { Card } from "@/components";
-import { cards } from "@/utils/constants/card";
+import { Box, Typography } from '@mui/material';
+import React from 'react';
+import { styles } from './styles';
+import { Card } from '@/components';
+import { cards } from '@/utils/constants/card';
 
 const SectionTwo = () => {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        height: "100vh",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        height: '70vh',
       }}
     >
       <Box sx={styles.containerTop}>
@@ -27,8 +27,8 @@ const SectionTwo = () => {
       </Box>
 
       <Box sx={styles.containerBottom}>
-        {cards.map((card) => (
-          <Card url={card.url} text={card.text} />
+        {cards.map((card, index) => (
+          <Card key={index} url={card.url} text={card.text} />
         ))}
       </Box>
     </Box>
