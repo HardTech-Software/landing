@@ -1,6 +1,6 @@
-import { Box, Link, Typography } from "@mui/material";
-import React from "react";
-import { styles } from "./styles";
+import { Box, Link, Typography } from '@mui/material';
+import React from 'react';
+import { styles } from './styles';
 
 interface ColumnLinksProps {
   title: string;
@@ -18,8 +18,10 @@ const ColumnLinks = ({ title, items }: ColumnLinksProps) => {
       <Box sx={styles.links}>
         <Typography sx={styles.title}>{title}</Typography>
 
-        {items.map((item) => (
-          <Link sx={styles.item}>{item.label}</Link>
+        {items.map((item, index) => (
+          <Link key={index} sx={styles.item}>
+            {item.label}
+          </Link>
         ))}
       </Box>
     </Box>

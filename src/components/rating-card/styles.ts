@@ -1,22 +1,27 @@
-import { StylesProps } from "@/models/styles-props.interface";
+import { StylesProps } from '@/models/styles-props.interface';
 
 export const styles: StylesProps = {
   container: {
-    maxWidth: 260,
-    backgroundColor: "#f0f0f0",
-    margin: "10px",
-
-    padding: "40px 30px",
+    minWidth: 260,
+    backgroundColor: 'white',
+    margin: '10px',
+    padding: '40px 30px',
   },
 
   comment: {
-    color: "#4C526E",
+    color: '#4C526E',
     fontWeight: 500,
-    margin: "20px 0",
+    marginBottom: '20px',
+    marginTop: '10px',
   },
 
   author: {
-    color: "#003072",
+    color: '#003072',
     fontWeight: 500,
+  },
+  title: {
+    color: '#003072',
+    fontWeight: 800,
+    marginTop: '25px',
   },
 };

@@ -1,18 +1,26 @@
 export const ratingCard = [
   {
-    comment: "wenoweno todo muy weno weno weno weno, wenoweno todo muy weno",
-    author: "Lala",
+    comment:
+      'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
+    author: 'Barb Ackuee',
+    title: 'Brilliant work',
   },
   {
-    comment: "wenoweno todo muy weno weno weno weno, wenoweno todo muy weno",
-    author: "Lala",
+    comment:
+      'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
+    author: 'Barb Ackuee',
+    title: 'Brilliant work',
   },
   {
-    comment: "wenoweno todo muy weno weno weno weno, wenoweno todo muy weno",
-    author: "Lala",
+    comment:
+      'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
+    author: 'Barb Ackuee',
+    title: 'Brilliant work',
   },
   {
-    comment: "wenoweno todo muy weno weno weno weno, wenoweno todo muy weno",
-    author: "Lala",
+    comment:
+      'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
+    author: 'Barb Ackuee',
+    title: 'Brilliant work',
   },
 ];

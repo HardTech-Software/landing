@@ -8,21 +8,35 @@ const SectionThree = () => {
     <Box
       sx={{
         display: 'flex',
-        height: '100vh',
+        height: '95vh',
 
         alignItems: 'center',
       }}
     >
-      <Box sx={{ flex: 1, paddingRight: 6 }}>
+      <Box sx={{ flex: 1, paddingRight: 6, position: 'relative' }}>
         <img
           alt="men-desk"
           src="/men-desk.png"
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
+        <Box
+          sx={{
+            backgroundColor: '#F3F8FF',
+            position: 'absolute',
+            top: '99%',
+            width: '100vw',
+            height: '50vh',
+            overflow: 'hidden',
+            zIndex: -1,
+          }}
+        ></Box>
       </Box>
       <Box sx={{ flex: 1, paddingLeft: 6 }}>
         <Box sx={{ width: '60%' }}>
-          <Typography variant="body2" sx={{ color: '#316EC2' }}>
+          <Typography
+            variant="body2"
+            sx={{ color: '#316EC2', letterSpacing: '2px' }}
+          >
             ABOUT US
           </Typography>
           <Typography

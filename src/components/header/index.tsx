@@ -32,7 +32,6 @@ const Header = () => {
 
   return (
     <>
-      {/* Header estático visible al cargar la página */}
       <Box sx={styles(false, false).root}>
         <Box display="flex" flexDirection="row">
           <Box>
@@ -87,7 +86,6 @@ const Header = () => {
         </Box>
       </Box>
 
-      {/* Header fijo que aparece al hacer scroll */}
       <Box
         sx={{
           ...currentStyles.root,

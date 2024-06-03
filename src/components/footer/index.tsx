@@ -17,7 +17,7 @@ import { styles } from './styles';
 import { columns } from '@/utils/constants/column-links';
 const Footer = () => {
   return (
-    <>
+    <Box sx={{ paddingLeft: '5%', paddingRight: '5%', paddingTop: '100px' }}>
       <Box sx={styles.containerTop}>
         <Box sx={styles.sectionLeft}>
           <Typography sx={styles.textTop}>Subscribe Newsletter</Typography>
@@ -102,7 +102,7 @@ const Footer = () => {
           Copyright ©2024 All rights reserved | HardTech
         </Typography>
       </Box>
-    </>
+    </Box>
   );
 };
 
