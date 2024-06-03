@@ -1,32 +1,29 @@
 export const columns = [
   {
-    title: "Quick Link 1",
+    title: 'Quick Links',
     items: [
-      { label: "My account 1", url: "url" },
-      { label: "My account 2", url: "url" },
-      { label: "My account 3", url: "url" },
-      { label: "My account 4", url: "url" },
-      { label: "My account 5", url: "url" },
+      { label: 'My Account', url: 'url' },
+      { label: 'Online Catalog', url: 'url' },
+      { label: 'Contact', url: 'url' },
+      { label: 'Terms & Conditions', url: 'url' },
     ],
   },
   {
-    title: "Quick Link 2",
+    title: 'Services',
     items: [
-      { label: "My account 1", url: "url" },
-      { label: "My account 2", url: "url" },
-      { label: "My account 3", url: "url" },
-      { label: "My account 4", url: "url" },
-      { label: "My account 5", url: "url" },
+      { label: 'Medium Enterprise', url: 'url' },
+      { label: 'Large Enterprise', url: 'url' },
+      { label: 'Education', url: 'url' },
+      { label: 'Government', url: 'url' },
+      { label: 'Health Care', url: 'url' },
     ],
   },
   {
-    title: "Quick Link 3",
+    title: 'Contact Us',
     items: [
-      { label: "My account 1", url: "url" },
-      { label: "My account 2", url: "url" },
-      { label: "My account 3", url: "url" },
-      { label: "My account 4", url: "url" },
-      { label: "My account 5", url: "url" },
+      { label: 'Support Ticket', url: 'url' },
+      { label: 'FAQ', url: 'url' },
+      { label: 'Contact Us', url: 'url' },
     ],
   },
 ];

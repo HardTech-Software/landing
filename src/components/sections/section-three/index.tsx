@@ -33,7 +33,10 @@ const SectionThree = () => {
       </Box>
       <Box sx={{ flex: 1, paddingLeft: 6 }}>
         <Box sx={{ width: '60%' }}>
-          <Typography variant="body2" sx={{ color: '#316EC2' }}>
+          <Typography
+            variant="body2"
+            sx={{ color: '#316EC2', letterSpacing: '2px' }}
+          >
             ABOUT US
           </Typography>
           <Typography

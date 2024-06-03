@@ -5,12 +5,10 @@ export const styles: StylesProps = {
     display: 'flex',
     flexDirection: { xs: 'column', md: 'row' },
     flexWrap: 'wrap',
-    padding: '20px',
   },
 
   sectionLeft: {
     maxWidth: { md: 350 },
-    padding: '0 20px 40px 0',
   },
 
   sectionCenter: {

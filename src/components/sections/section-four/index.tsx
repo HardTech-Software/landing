@@ -20,7 +20,10 @@ const SectionFour = () => {
         }}
       >
         <Box>
-          <Typography variant="body2" sx={{ color: '#316EC2' }}>
+          <Typography
+            variant="body2"
+            sx={{ color: '#316EC2', letterSpacing: '2px' }}
+          >
             SERVICES
           </Typography>
           <Typography
