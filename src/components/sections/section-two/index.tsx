@@ -1,7 +1,8 @@
+import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
 
-const SectionThree = () => {
-  return <div>SectionThree</div>;
+const SectionTwo = () => {
+  return <Box sx={{ display: 'flex', height: '100vh' }}></Box>;
 };
 
-export default SectionThree;
+export default SectionTwo;

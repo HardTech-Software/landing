@@ -1,3 +1,4 @@
+'use client';
 import { Button, Card, Header, RatingCard, ServiceCard } from '@/components';
 import CardComponent from '@/components/card';
 import Footer from '@/components/footer';
