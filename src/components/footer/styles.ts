@@ -32,25 +32,21 @@ export const styles: StylesProps = {
   },
 
   textTop: {
-    color: '#003072',
     fontSize: '20px',
     marginBottom: '30px',
   },
 
   textBottom: {
-    color: '#4C526E',
     marginBottom: '20px',
   },
 
   button: {
-    backgroundColor: '#316EC2',
     color: '#fff',
     borderRadius: '0 3px 3px 0',
     height: 56,
   },
 
   title: {
-    color: '#003072',
     fontSize: '20px',
     marginBottom: '30px',
   },
@@ -97,7 +93,6 @@ export const styles: StylesProps = {
   },
 
   copy: {
-    color: '#4C526E',
     fontSize: '14px',
     lineHeight: 2,
   },

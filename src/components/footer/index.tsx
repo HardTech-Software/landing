@@ -8,20 +8,28 @@ import {
   Typography,
 } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
 import { Facebook, YouTube, LinkedIn, Instagram } from '@mui/icons-material';
 import React from 'react';
 import ColumnLinks from '../column-links';
-
 import { styles } from './styles';
 import { columns } from '@/utils/constants/column-links';
+
 const Footer = () => {
   return (
-    <Box sx={{ paddingLeft: '5%', paddingRight: '5%', paddingTop: '100px' }}>
+    <Box
+      sx={{
+        paddingLeft: '5%',
+        paddingRight: '5%',
+        paddingTop: '100px',
+      }}
+      bgcolor="background.default"
+    >
       <Box sx={styles.containerTop}>
         <Box sx={styles.sectionLeft}>
-          <Typography sx={styles.textTop}>Subscribe Newsletter</Typography>
-          <Typography sx={styles.textBottom}>
+          <Typography sx={{ ...styles.textTop }} color="primary">
+            Subscribe Newsletter
+          </Typography>
+          <Typography sx={styles.textBottom} color="text.primary">
             We understand the complexities of modern markets and translate them
             into real business solutions for automotive, financial, insuranc.
           </Typography>
@@ -37,7 +45,7 @@ const Footer = () => {
               InputLabelProps={{ sx: { fontWeight: 500 } }}
             />
 
-            <Button sx={styles.button}>
+            <Button sx={styles.button} variant="contained">
               <ArrowForwardIcon />
             </Button>
           </Box>
@@ -50,7 +58,9 @@ const Footer = () => {
         </Box>
 
         <Box sx={styles.sectionRight}>
-          <Typography sx={styles.title}>Subscribe newsletter</Typography>
+          <Typography sx={styles.title} color="primary">
+            Subscribe newsletter
+          </Typography>
           <Box sx={styles.iconContainer}>
             <IconButton
               sx={
@@ -98,7 +108,7 @@ const Footer = () => {
       <Divider variant="middle" />
 
       <Box sx={styles.copyContainer}>
-        <Typography sx={styles.copy}>
+        <Typography sx={styles.copy} color="secondary.main">
           Copyright ©2024 All rights reserved | HardTech
         </Typography>
       </Box>

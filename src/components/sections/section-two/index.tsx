@@ -13,13 +13,17 @@ const SectionTwo = () => {
         justifyContent: 'center',
         height: '70vh',
       }}
+      bgcolor="background.default"
     >
       <Box sx={styles.containerTop}>
-        <Typography sx={styles.textTop}> INDUSTRY WE OFFER</Typography>
-        <Typography sx={styles.textCenter}>
+        <Typography sx={styles.textTop} color="text.primary">
+          {' '}
+          INDUSTRY WE OFFER
+        </Typography>
+        <Typography sx={styles.textCenter} color="text.primary">
           Managed IT services customized for your industry
         </Typography>
-        <Typography sx={styles.textBottom}>
+        <Typography sx={styles.textBottom} color="text.primary">
           We understand the complexities of modern markets and translate them
           into real business solutions for automotive, financial, insurance,
           pharma & life sciences.

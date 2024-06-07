@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from '@/components';
-import { Box, Divider, Typography } from '@mui/material';
+import { Box, Divider, Typography, useTheme } from '@mui/material';
 import React from 'react';
 
 const SectionFive = () => {
+  const { palette } = useTheme();
   return (
     <Box
       sx={{
@@ -15,6 +16,7 @@ const SectionFive = () => {
         paddingLeft: '16%',
         paddingRight: '16%',
       }}
+      bgcolor="background.default"
     >
       <Box
         sx={{
@@ -23,7 +25,7 @@ const SectionFive = () => {
           flex: 1,
         }}
       >
-        <Box sx={{ display: 'flex', flex: 1, backgroundColor: '#003072' }}>
+        <Box sx={{ display: 'flex', flex: 1 }} bgcolor="secondary.main">
           <Box
             sx={{
               flex: 1,
@@ -38,12 +40,12 @@ const SectionFive = () => {
                 fontWeight={500}
                 mb="40px"
                 lineHeight="38px"
-                sx={{ color: 'white' }}
+                color="text.primary"
               >
                 Insights to help you do what you do better, faster and more
                 profitably.
               </Typography>
-              <Typography fontSize={18} mb="40px" sx={{ color: 'white' }}>
+              <Typography fontSize={18} mb="40px" color="text.primary">
                 We understand the complexities of modern markets and translate
                 them into real business solutions for automotive, financial,
                 insuranc.
@@ -95,7 +97,7 @@ const SectionFive = () => {
             />
           </Box>
         </Box>
-        <Divider />
+        <Divider sx={{ backgroundColor: palette.text.primary }} />
       </Box>
     </Box>
   );

@@ -4,9 +4,9 @@ import {
   CardActions,
   CardMedia,
   Typography,
-} from "@mui/material";
-import React from "react";
-import { styles } from "./styles";
+} from '@mui/material';
+import React from 'react';
+import { styles } from './styles';
 
 interface CardComponentProps {
   url: string;
@@ -17,7 +17,9 @@ const CardComponent = ({ url, text }: CardComponentProps) => {
   return (
     <Card sx={styles.cardContainer}>
       <CardMedia sx={styles.cardMedia} component="img" image={url} alt="" />
-      <Typography sx={styles.text}>{text}</Typography>
+      <Typography sx={styles.text} color="text.primary">
+        {text}
+      </Typography>
 
       <CardActions>
         <Button sx={styles.more}>Share ➜</Button>

@@ -3,7 +3,7 @@ import { StylesProps } from '@/models/styles-props.interface';
 export const styles: StylesProps = {
   cardContainer: {
     minWidth: 260,
-    backgroundColor: '#F3F8FF',
+
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -23,7 +23,6 @@ export const styles: StylesProps = {
   },
 
   text: {
-    color: '#003072',
     fontSize: '20px',
     lineHeight: 1.4,
     fontWeight: 500,
@@ -33,7 +32,6 @@ export const styles: StylesProps = {
   },
 
   more: {
-    color: '#316EC2',
     textTransform: 'none',
     fontSize: 16,
     fontWeight: 400,

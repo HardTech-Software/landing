@@ -7,13 +7,13 @@ const FooterBanner = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#0E1B50',
         display: 'flex',
         justifyContent: 'center',
         paddingTop: '40px',
         paddingBottom: '40px',
         marginTop: '-5px',
       }}
+      bgcolor="primary.main"
     >
       <Box sx={{ display: 'flex', width: '80%' }}>
         <Box>
@@ -26,12 +26,13 @@ const FooterBanner = () => {
         <Box sx={{ marginLeft: '30px' }}>
           <Typography
             variant="h1"
-            sx={{ fontSize: '28px', color: 'white', marginBottom: '10px' }}
+            sx={{ fontSize: '28px', marginBottom: '10px' }}
             fontWeight="bold"
+            color="text.primary"
           >
             Satisfaction Guaranteed
           </Typography>
-          <Typography variant="subtitle1" sx={{ color: '#C6C9D9' }}>
+          <Typography variant="subtitle1" color="text.primary">
             We understand the complexities of modern markets and translate them
             into real business
           </Typography>

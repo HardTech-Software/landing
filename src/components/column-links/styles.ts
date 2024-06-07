@@ -7,7 +7,6 @@ export const styles: StylesProps = {
     flexDirection: 'column',
   },
   title: {
-    color: '#003072',
     fontSize: '20px',
     marginBottom: '30px',
   },
@@ -18,7 +17,7 @@ export const styles: StylesProps = {
   },
 
   item: {
-    color: '#4C526E',
+    // color: 'red',
     fontWeight: 300,
     fontSize: '18px',
     textDecoration: 'underline transparent',

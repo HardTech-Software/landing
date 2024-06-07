@@ -9,9 +9,9 @@ const SectionThree = () => {
       sx={{
         display: 'flex',
         height: '95vh',
-
         alignItems: 'center',
       }}
+      bgcolor="background.default"
     >
       <Box sx={{ flex: 1, paddingRight: 6, position: 'relative' }}>
         <img
@@ -21,21 +21,22 @@ const SectionThree = () => {
         />
         <Box
           sx={{
-            backgroundColor: '#F3F8FF',
             position: 'absolute',
             top: '99%',
             width: '100vw',
             height: '50vh',
             overflow: 'hidden',
-            zIndex: -1,
+            zIndex: 1,
           }}
+          bgcolor="background.paper"
         ></Box>
       </Box>
       <Box sx={{ flex: 1, paddingLeft: 6 }}>
         <Box sx={{ width: '60%' }}>
           <Typography
             variant="body2"
-            sx={{ color: '#316EC2', letterSpacing: '2px' }}
+            sx={{ letterSpacing: '2px' }}
+            color="text.primary"
           >
             ABOUT US
           </Typography>
@@ -45,16 +46,11 @@ const SectionThree = () => {
             fontWeight="bold"
             lineHeight="38px"
             mt={2}
-            sx={{ color: '#003072' }}
+            color="text.primary"
           >
             Build your amazing website with Itlock
           </Typography>
-          <Typography
-            variant="body1"
-            fontSize={18}
-            mt={2}
-            sx={{ color: '#4C526E' }}
-          >
+          <Typography variant="body1" fontSize={18} mt={2} color="text.primary">
             We understand the complexities of modern markets and translate them
             into real business solutions for automotive, financial, insurance,
             pharma & life sciences,
@@ -64,7 +60,7 @@ const SectionThree = () => {
             fontSize={18}
             mt={2}
             mb={4}
-            sx={{ color: '#4C526E' }}
+            color="text.primary"
           >
             We understand the complexities of modern markets and translate them
             into real business solutions for automotive, financial, insurance,

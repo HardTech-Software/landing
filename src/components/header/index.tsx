@@ -32,10 +32,10 @@ const Header = () => {
 
   return (
     <>
-      <Box sx={styles(false, false).root}>
+      <Box sx={styles(false, false).root} bgcolor="primary">
         <Box display="flex" flexDirection="row">
           <Box>
-            <Image src="/logo.png" alt="logo" width={166} height={48} />
+            <Image src="/logo.png" alt="logo" width={48} height={48} />
           </Box>
           <Box sx={styles(false, false).listItems}>
             {menuItems.map((item, index) => (
@@ -62,7 +62,7 @@ const Header = () => {
                 },
               }}
             >
-              Free Quote
+              Free Quot
             </Button>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -93,10 +93,11 @@ const Header = () => {
           transform: showFixedHeader ? 'translateY(0)' : 'translateY(-100%)',
           transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
         }}
+        bgcolor="background.paper"
       >
         <Box display="flex" flexDirection="row">
           <Box>
-            <Image src="/logo.png" alt="logo" width={166} height={48} />
+            <Image src="/logo.png" alt="logo" width={48} height={48} />
           </Box>
           <Box sx={currentStyles.listItems}>
             {menuItems.map((item, index) => (

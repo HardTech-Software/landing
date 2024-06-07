@@ -12,8 +12,8 @@ const SectionEight = () => {
         paddingTop: '100px',
         paddingBottom: '100px',
         alignItems: 'center',
-        backgroundColor: '#003072',
       }}
+      bgcolor="background.paper"
     >
       <Typography
         variant="h1"
@@ -21,19 +21,21 @@ const SectionEight = () => {
         fontSize={38}
         fontWeight="bold"
         lineHeight="38px"
-        sx={{ color: 'white', marginBottom: '20px' }}
+        sx={{ marginBottom: '20px' }}
+        color="primary"
       >
         {"Let's work together."}
       </Typography>
       <Typography
         maxWidth="620px"
         textAlign="center"
-        sx={{ color: 'white', marginBottom: '30px', fontSize: '18px' }}
+        sx={{ marginBottom: '30px', fontSize: '18px' }}
+        color="text.primary"
       >
         We understand the complexities of modern markets and translate them into
         real business solutions for automotive, financial, insuranc.
       </Typography>
-      <Button>Start Discussion</Button>
+      <Button variant="contained">Start Discussion</Button>
     </Box>
   );
 };

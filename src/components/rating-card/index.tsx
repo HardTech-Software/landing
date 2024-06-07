@@ -10,21 +10,19 @@ interface RatingCardProps {
 
 const RatingCard = ({ comment, author, title }: RatingCardProps) => {
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container} bgcolor="primary.main">
       <Stack spacing={1}>
-        <Rating
-          sx={{ color: '#316EC2' }}
-          name="half-rating"
-          defaultValue={5}
-          precision={1}
-          readOnly
-        />
+        <Rating name="half-rating" defaultValue={5} precision={1} readOnly />
       </Stack>
-      <Typography variant="body1" sx={styles.title}>
+      <Typography variant="body1" sx={styles.title} color="text.primary">
         {title}
       </Typography>
-      <Typography sx={styles.comment}>{comment}</Typography>
-      <Typography sx={styles.author}>{author}</Typography>
+      <Typography sx={styles.comment} color="text.primary">
+        {comment}
+      </Typography>
+      <Typography sx={styles.author} color="text.primary">
+        {author}
+      </Typography>
     </Box>
   );
 };

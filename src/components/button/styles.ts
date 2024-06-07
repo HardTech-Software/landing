@@ -2,7 +2,6 @@ import { StylesProps } from '@/models/styles-props.interface';
 
 export const styles: StylesProps = {
   contained: {
-    backgroundColor: '#316ec2',
     color: '#fff',
     padding: '12px 34px',
     fontSize: '17px',
@@ -12,10 +11,6 @@ export const styles: StylesProps = {
     border: 'none',
     cursor: 'pointer',
     transition: '0.3s',
-
-    '&:hover': {
-      backgroundColor: '#477cc5',
-    },
   },
   outlined: {
     backgrounColor: 'transparent',
@@ -28,9 +23,5 @@ export const styles: StylesProps = {
     border: '2px solid #fff',
     cursor: 'pointer',
     transition: '0.3s',
-    '&:hover': {
-      backgroundColor: '#316ec2',
-      border: '2px solid #316ec2',
-    },
   },
 };

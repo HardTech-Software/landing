@@ -15,12 +15,13 @@ const SectionSeven = () => {
         alignItems: 'center',
         paddingRight: '16%',
         paddingLeft: '16%',
-        backgroundColor: '#EBF0F8',
       }}
+      bgcolor="background.default"
     >
       <Typography
         variant="body2"
-        sx={{ color: '#316EC2', marginBottom: '30px', letterSpacing: '2px' }}
+        sx={{ marginBottom: '30px', letterSpacing: '2px' }}
+        color="text.primary"
       >
         TESTIMONIAL
       </Typography>
@@ -30,7 +31,8 @@ const SectionSeven = () => {
         fontSize={38}
         maxWidth="550px"
         fontWeight="bold"
-        sx={{ color: '#003072', marginBottom: '50PX' }}
+        sx={{ marginBottom: '50PX' }}
+        color="text.primary"
       >
         Love from our client
       </Typography>

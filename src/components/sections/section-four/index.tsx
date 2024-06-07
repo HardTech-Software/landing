@@ -12,17 +12,20 @@ const SectionFour = () => {
         paddingLeft: '16%',
         paddingRight: '16%',
       }}
+      bgcolor="background.default"
     >
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
+          zIndex: 1,
         }}
       >
         <Box>
           <Typography
             variant="body2"
-            sx={{ color: '#316EC2', letterSpacing: '2px' }}
+            sx={{ letterSpacing: '2px' }}
+            color="text.primary"
           >
             SERVICES
           </Typography>
@@ -32,7 +35,7 @@ const SectionFour = () => {
             fontSize={38}
             maxWidth="550px"
             fontWeight="bold"
-            sx={{ color: '#003072' }}
+            color="text.primary"
           >
             We design apps & websites that lead in their space
           </Typography>
@@ -42,7 +45,7 @@ const SectionFour = () => {
             variant="subtitle1"
             fontSize={18}
             lineHeight="18px"
-            sx={{ color: '#4C526E' }}
+            color="text.primary"
           >
             We understand the complexities of modern markets and translate them
             into real business solutions for automotive, financial, insurance,
@@ -55,6 +58,7 @@ const SectionFour = () => {
           display: 'flex',
           justifyContent: 'space-between',
           marginTop: '60px',
+          zIndex: 1,
         }}
       >
         {cardsOne.map((card, index) => (

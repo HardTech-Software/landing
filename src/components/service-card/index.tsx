@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
   Typography,
-} from "@mui/material";
-import { styles } from "./styles";
+  useTheme,
+} from '@mui/material';
+import { styles } from './styles';
 
 interface ServiceCardProps {
   url: string;
@@ -15,13 +16,23 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ url, title, description }: ServiceCardProps) => {
+  const { palette } = useTheme();
   return (
-    <Card sx={styles.cardContainer}>
+    <Card
+      sx={{
+        ...styles.cardContainer,
+        backgroundColor: palette.primary.main,
+      }}
+    >
       <CardActionArea>
         <CardMedia sx={styles.cardMedia} component="img" image={url} alt="" />
         <CardContent sx={styles.cardContent}>
-          <Typography sx={styles.title}>{title}</Typography>
-          <Typography sx={styles.description}>{description}</Typography>
+          <Typography sx={styles.title} color="text.primary">
+            {title}
+          </Typography>
+          <Typography sx={styles.description} color="text.primary">
+            {description}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

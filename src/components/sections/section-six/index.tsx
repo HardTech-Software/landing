@@ -15,10 +15,12 @@ const SectionSix = () => {
         paddingRight: '16%',
         paddingLeft: '16%',
       }}
+      bgcolor="background.default"
     >
       <Typography
         variant="body2"
-        sx={{ color: '#316EC2', marginBottom: '30px', letterSpacing: '2px' }}
+        sx={{ marginBottom: '30px', letterSpacing: '2px' }}
+        color="text.primary"
       >
         OUR CASE STUDY
       </Typography>
@@ -28,7 +30,8 @@ const SectionSix = () => {
         fontSize={38}
         maxWidth="550px"
         fontWeight="bold"
-        sx={{ color: '#003072', marginBottom: '50PX' }}
+        sx={{ marginBottom: '50PX' }}
+        color="text.primary"
       >
         We work with global brands
       </Typography>

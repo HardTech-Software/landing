@@ -16,10 +16,12 @@ const ColumnLinks = ({ title, items }: ColumnLinksProps) => {
   return (
     <Box>
       <Box sx={styles.links}>
-        <Typography sx={styles.title}>{title}</Typography>
+        <Typography sx={styles.title} color="primary">
+          {title}
+        </Typography>
 
         {items.map((item, index) => (
-          <Link key={index} sx={styles.item}>
+          <Link key={index} sx={styles.item} color="text.primary">
             {item.label}
           </Link>
         ))}
